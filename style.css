@@ -1,0 +1,364 @@
+body {
+  background: rgb(37,10,10);
+  background: linear-gradient(90deg, rgba(37,10,10,1) 0%, rgba(32,6,11,1) 33%, rgba(8,4,33,1) 65%, rgba(5,2,51,1) 100%);
+
+  color: Gainsboro; /* Change la couleur du texte en blanc */
+  font-family: 'Inter Tight';
+}
+
+.ecrit{
+  font-size: 42px;
+  color: white;
+  font-family: 'Inter Tight', sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+p.directive{
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 80px;
+    
+  }
+  .grid-container-deux{
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-auto-rows: 80px;
+  grid-template-rows: 1fr;
+    grid-gap: 20px;
+    margin-top: 100px;
+  }
+
+  
+  
+  .button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+  }
+
+  .button-grey {
+    background-color: #302F2F;
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    color: white;
+    line-height: 25px;
+    
+  }
+ .timer-container{
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: grey;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  top: 50px;
+  margin-top: 120px;
+ }
+  .message-emergency{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    color: tomato;
+    position: absolute;
+    top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  top: 50px;
+  margin-top: 120px;
+  }
+
+  .message-raccrocher{
+    font-size: 25px;
+    position: absolute; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  top: 100px;
+  margin-top: 150px;
+  color: tomato;
+  }
+
+  .button-green {
+    background-color: limegreen;
+    margin-top: 20px;
+  }
+
+  .button-green i {
+    color: white;
+    font-size: 2.5em;
+
+  }
+
+  .button-red { 
+    background-color: tomato;
+    position: absolute;
+    top: 90vh; /* position verticale centrée */
+    left: 50vw; /* position horizontale centrée */
+    transform: translate(-50%, -50%); /* recentrage */
+  }
+  
+  .fa-phone-slash{
+    color: white;
+    font-size: 2.5em;
+    
+
+  }
+
+  .icon-gris-container{
+    color: white;
+    font-size: 0.9em;
+    position: absolute;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 80px;
+  }
+
+  .sousTexte{
+    font-size:12px;
+    color: white;
+    border: none;
+    
+  }
+
+  .texteIntro{
+    white-space: pre-line;
+    position: absolute;
+    font-size: 20px;
+    color: Gainsboro;
+    width: 1000px;
+    height: 300px;
+    text-align: justify;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .indication{
+    position: absolute;
+    color: tomato;
+    font-size: 20px;
+    width: 1000px;
+    height: 300px;
+    text-align: justify;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/*PART 2*/
+
+/*Graphique points*/
+.bubble-container{
+position: absolute;
+top: 150px;
+}
+
+.textePoint{
+  position: absolute;
+  top: -50px;
+  left:230px;
+  font-size: 20px;
+  width: 1000px; /* largeur du bloc */
+  height: 100px;
+}
+
+.cause1, .texteCause1, .chiffreCause1, .cause2, .texteCause2, .chiffreCause2 {
+  position: absolute;
+}
+.cause1 {
+  top: 60px;
+  left: 350px;
+  right: 90px;
+  font-size: 50px;
+  font-weight: bold;
+  color: Gainsboro;
+}
+.texteCause1 {
+  white-space: pre-line;
+  text-align: justify;
+  top: 420px;
+  left: 350px;
+  width: 350px; /* largeur du bloc */
+  height: 300px; /* hauteur du bloc */
+  color: Gainsboro;
+}
+.chiffreCause1 {
+  top: 220px;
+  left: 280px;
+  font-size: 50px;
+  font-weight: bold;
+  color: darkred;
+}
+.cause2{
+  top: 60px;
+  left: 820px;
+  font-size: 50px;
+  font-weight: bold;
+  color:Gainsboro;
+}
+.texteCause2{
+  text-align: justify;
+  top: 420px;
+  left: 820px;
+  width: 300px; /* largeur du bloc */
+  height: 300px; /* hauteur du bloc */
+  color:Gainsboro;
+}
+.chiffreCause2{
+  top: 220px;
+  left: 1120px;
+  font-size: 50px;
+  font-weight: bold;
+  color: midnightblue;
+}
+
+
+/*Map*/
+.map{
+  position:absolute;
+  top: 100px;
+}
+
+
+.texteMap{
+  white-space: pre-line;
+  position:absolute;
+  text-align: justify;
+  top: 50px;
+  left: 910px;
+  width: 400px; /* largeur du bloc */
+  height: 300px; /* hauteur du bloc */
+  color:Gainsboro;
+}
+
+.district{
+  font-size: 100px;
+      font-weight: bold;
+      position: absolute;
+      top: 80%; 
+      left: 15%; 
+}
+
+.quartier{
+  color:darkred;
+  white-space: pre-line;
+  font-size: 30px;
+      position: absolute;
+      top: 100%; 
+      left: 15%; 
+}
+
+/*Graphique Jour et Heure*/
+.graph-container {
+    width: 200px;
+    height: 200px;
+}
+
+  .axis-label {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    fill: Gainsboro;
+
+  }
+  
+  .graphJour {
+    position: relative;
+    overflow: visible;
+    top: 50px;
+    left: 80px;
+    }
+
+  .graphHeure{
+    position: relative;
+    overflow: visible;
+    top: 50px;
+    left: 80px;
+  }
+
+    .texteJour, .texteHeure{
+      white-space: pre-line;
+      color: Gainsboro;
+      position: absolute;
+      top: 30%; 
+      left: 80%; 
+      transform: translate(-50%, -50%);
+    }
+  
+    .jour{
+      font-size: 100px;
+      font-weight: bold;
+      position: absolute;
+      top: 60%; 
+      left: 15%; 
+    }
+    .heure{
+      font-size: 100px;
+      font-weight: bold;
+      position: absolute;
+      top: 60%; 
+      left: 25%;
+    }
+  
+    #texte {
+      width: 30%;
+      float: right;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .texteOutro{
+      white-space: pre-line;
+      position: absolute;
+      font-size: 20px;
+      color: Gainsboro;
+      width: 1000px;
+      height: 300px;
+      text-align: justify;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+   
+/* CSS pour la tooltip */
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+
+  

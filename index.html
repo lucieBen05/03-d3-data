@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon clavier téléphonique</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap">
+  </head>
+	<body>
+		<div class="ecrit" id="ecrit"></div>
+		<p class='directive'>You witness an assault <br> call the emergency (911) </p>
+		<div class="container">
+			<div class="grid-container">
+				<button class="button button-grey" id="boutton1">1</button>
+				<button class="button button-grey">2 
+					<br>
+					<span class="sousTexte">ABC</span>
+				</button>
+				<button class="button button-grey">3
+					<br>
+					<span class="sousTexte">DEF</span>
+				</button>
+			
+				<button class="button button-grey">4
+					<br>
+					<span class="sousTexte">GHI</span>
+				</button>
+				<button class="button button-grey">5
+					<br>
+					<span class="sousTexte">JKL</span>
+				</button>
+				<button class="button button-grey">6
+					<br>
+					<span class="sousTexte">MNO</span>
+				</button>
+				<button class="button button-grey">7
+					<br>
+					<span class="sousTexte">PQRS</span>
+				</button>
+				<button class="button button-grey">8
+					<br>
+					<span class="sousTexte">TUV</span>
+				</button>
+				<button class="button button-grey" id="boutton9">9
+					<br>
+					<span class="sousTexte">WXYZ</span>
+				</button>
+				<button class="button button-grey">*</button>
+				<button class="button button-grey">0
+					<br>
+					<span class="sousTexte">+</span>
+				</button>
+				<button class="button button-grey">#</button>
+			</div>
+	
+				<button class="button button-green" id="bouttonVert"><i class="fa-solid fa-phone"></i></button>
+	
+		</div>
+		<div class="map">
+		</div>
+
+		<section class="bubble-container">
+			<svg class="bubble" ></svg>
+		</section>
+
+		<section class="graph-container-jour">
+			<svg class="graphJour"></svg>
+		</section>
+
+		<section class="graph-container-heure">
+			<svg class="graphHeure"></svg>
+		</section> 
+  
+	</body>
+  <script type="module" src="../src/index.js"></script>
+</html>
