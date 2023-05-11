@@ -36,7 +36,7 @@ function clignoter() {
 clignoter();
 //Lorsqu'on décroche (bouton vert), l'audio se met en marche
 const bouttonVert = document.querySelector('#bouttonVert'); 
-const audio = new Audio("../src/911Call.mp4"); 
+const audio = new Audio("./911Call.mp4"); 
 let temps = 0;
 
 bouttonVert.addEventListener('click', function() {
