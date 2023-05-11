@@ -1,43 +1,26 @@
-# Données
+THEMATIQUE
 
-## Installation
-Comme la semaine dernière, le dossier d'exercice contient les éléments nécéssaires pour démarrer un serveur [Node.js](https://nodejs.org/en/) en local et de *traduire* votre code ES6 dans un langage lisible par le navigateur avec [Vite](https://vitejs.dev/).  
-* Rentrez dans le dossier *03-d3-data* ``cd 03-d3-data/``
-* Installez les packages nécessaires et qui sont dans le package.json ```npm install```
-* Démarrez le serveur ```npm run dev```
+Contexte:
+Les données proviennent d’Open Baltimore, un site où l’on peut trouver des centaines de jeux de données sur la ville de Baltimore, situés aux États-Unis. Elles représentent les appels d’urgence et de non-urgence au 911 en 2022. Elles sont fournies par le Département de la police de Baltimore et sont collectées à partir des appels d’urgence, qui sont ensuite enregistrés dans le système de gestion des appels du 911. Étant donné le nombre volumineux de lignes dans ces données, nous avons décidé de les filtrer. Nous analyserons les données datant uniquement du mois de décembre et dont les appels ont été considérés comme « hautement prioritaires ».
+Les données sont disponibles sur ce lien : https://data.baltimorecity.gov/datasets/baltimore::911-calls-for-service-2022-1
 
-:rocket: Vous devriez avoir accès à votre serveur local sur  [localhost:5174](http:localhost:5174) :rocket:
+Description: 
+Ces données sont disponibles au format CSV (Comma-Separated-Value). Elles sont structurées en plusieurs colonnes. Il y a 17 attributs, principalement de type texte. Deux attributs sont différents. Ils sont de type nombre et date/heure.
+Parmi ces attributs, les plus pertinents sont la date et l’heure, la priorité, la description et l’adresse de l’appel.
 
-Comme la semaine passée, le fichier html se trouve à la racine du dossier et l'exercice se déroulera dans le fichier ```src/ìndex.js```, où vous allez enfin charger et manipuler des données. 
+But: 
+La ville de Baltimore, dans l’état du Maryland aux États Unis, est classée selon de nombreux sites comme étant la ville la plus criminelle des États-Unis. « Ici on prie chaque jour dans l’espoir de ne pas subir de violence », affirme le pasteur Phyllis Felton. La pauvreté, le racisme et l’accès facile aux armes à feu représentent les principales causes de cette violence permanente. En 2022, 1'621' 079 appels ont été recensés auprès du 911, numéro d’urgence aux USA. En récupérant les données concernant ces appels, nous souhaitons découvrir ce qu’il se cache derrière cette violence permanente. 
+Nous souhaitons à travers notre site web démontrer la triste réalité de la ville de Baltimore, et plus largement des États-Unis. De ce fait, nous analyserons les données concernant le mois de décembre, ainsi, nous pourrons déterminer les causes des appels durant un mois à l’origine rythmé par les festivités. Nous déterminerons les quartiers dans lesquels il se produit le plus d’urgences afin de visualiser les zones les plus problématiques de cette ville. Dans un dernier temps, l’idée de créer une fiction autour d’un habitant lançant un appel au 911 nous permettrait de personnifier nos données. Ce dernier dénoncera aux autorités la cause la plus fréquente de ces appels, dans le quartier le plus fréquent, à l’heure la plus fréquente. Ces informations seront déterminées par l’analyse de nos données.  
 
-## Charger les données
-[{JSON} Placeholder](https://jsonplaceholder.typicode.com/) est un projet qui met à disposition des fausses API pour tester et prototyper des applications. Chargez les données `posts` et `users` avec la méthode [json()](https://github.com/d3/d3-fetch#json) du module [d3-fetch](https://github.com/d3/d3-fetch).
+Références: 
+Le jeu de données que nous souhaitons analyser étant accessible publiquement, n’importe qui peut s’en servir. Ces données peuvent être utilisées pour des travaux de recherches ou dans un but purement informationnel. Nos données concernant précisément l’année 2022, nous n’avons trouvé qu’une seule utilisation de ces dernières.
+Le site du bureau du gouverneur pour la prévention de la criminalité, la jeunesse et les services aux victimes de l’état du Maryland s’en est servi en réalisant un tableau de bord de l’état de la criminalité dans la ville de Baltimore. La visualisation permet de démontrer les différents types et le nombre de crimes dans les différents quartiers. En cliquant sur une catégorie de crime en particulier, les données s’actualisent afin de décrire l’état de ce dernier selon les quartiers impactés, le nombre de crimes de cette catégorie et d’autres précisions intéressantes. Voici le lien de la visualisation: http://goccp.maryland.gov/data-dashboards/baltimore-city-crime-dashboard/#
 
-> Pour charger plusieurs datasets: https://stackoverflow.com/questions/49239474/load-multiple-files-using-the-d3-fetch-module
+WIREFRAMES
 
-## Manipuler les données
-* A partir des données **users** et **posts**, créez un tableau d'objets qui a la structure suivante
-
-```js
-[
-  {
-    nom_utilisateur: 'Machin',
-    ville: 'Truc',
-    nom_companie: 'Bidule',
-    titres_posts: [
-      'Titre 1',
-      'Titre 2',
-    ]
-  },
-  // ...
-]
-```
-Écrivez dans le DOM les résultats suivants: 
-
-* Calculez le nombre de **posts** par **user**
-* Trouvez le **user** qui a écrit le texte le plus long dans **posts.body**
-
-## Dessiner avec les données
-* Dessinez un graphique en bâton en ayant sur l'axe *x* les utilisateurs et *y* le nombre de posts 
-* Mettez une étiquette en dessous ce chaque bâton qui indique l'identifiant de chaque utilisateur
-
+![1](https://user-images.githubusercontent.com/115465411/225592429-ca9f9232-a2a8-45d5-919f-9255522db3f9.jpg)
+![2](https://user-images.githubusercontent.com/115465411/225592673-18017f1e-6c7a-4ee7-b146-992ef9d1ebef.jpg)
+![3](https://user-images.githubusercontent.com/115465411/225592695-99f9671d-227c-41e3-8874-7a08717f4e75.jpg)
+![4](https://user-images.githubusercontent.com/115465411/225592706-a1808932-5a56-4a89-b886-615cf641b303.jpg)
+![5](https://user-images.githubusercontent.com/115465411/225592722-65483516-c050-42ec-b93a-a386bb14d39d.jpg)
+![6](https://user-images.githubusercontent.com/115465411/225592733-68932406-1f4b-4e50-88b1-052d7bd9b0c0.jpg)
