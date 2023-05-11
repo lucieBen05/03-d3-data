@@ -36,7 +36,7 @@ function clignoter() {
 clignoter();
 //Lorsqu'on décroche (bouton vert), l'audio se met en marche
 const bouttonVert = document.querySelector('#bouttonVert'); 
-const audio = new Audio("./911Call.mp4"); 
+const audio = new Audio("/911Call.mp4");
 let temps = 0;
 
 bouttonVert.addEventListener('click', function() {
@@ -225,7 +225,7 @@ function afficheMap(){
     .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
 
   // Charger le fichier GeoJSON
-  d3.json("../src/Maryland_Baltimore_City_Neighborhoods.geojson").then(
+  d3.json("/Maryland_Baltimore_City_Neighborhoods.geojson").then(
     (data) => {
       let fixed = data.features.map(function (feature) {
         return rewind(feature, { reverse: true });
@@ -264,7 +264,7 @@ function afficheMap(){
         .style("opacity", 0.7);
 
       // Charger le fichier CSV des appels 911
-      d3.csv("../src/911_Call_geo.csv").then(function (data) {
+      d3.csv("/911_Call_geo.csv").then(function (data) {
         data.forEach(function (d) {
           if (d.points) {
             var point = d.points.split(",");
