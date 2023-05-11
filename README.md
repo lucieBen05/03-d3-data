@@ -16,6 +16,7 @@ Références:
 Le jeu de données que nous souhaitons analyser étant accessible publiquement, n’importe qui peut s’en servir. Ces données peuvent être utilisées pour des travaux de recherches ou dans un but purement informationnel. Nos données concernant précisément l’année 2022, nous n’avons trouvé qu’une seule utilisation de ces dernières.
 Le site du bureau du gouverneur pour la prévention de la criminalité, la jeunesse et les services aux victimes de l’état du Maryland s’en est servi en réalisant un tableau de bord de l’état de la criminalité dans la ville de Baltimore. La visualisation permet de démontrer les différents types et le nombre de crimes dans les différents quartiers. En cliquant sur une catégorie de crime en particulier, les données s’actualisent afin de décrire l’état de ce dernier selon les quartiers impactés, le nombre de crimes de cette catégorie et d’autres précisions intéressantes. Voici le lien de la visualisation: http://goccp.maryland.gov/data-dashboards/baltimore-city-crime-dashboard/#
 
+//
 WIREFRAMES
 
 ![1](https://user-images.githubusercontent.com/115465411/225592429-ca9f9232-a2a8-45d5-919f-9255522db3f9.jpg)
