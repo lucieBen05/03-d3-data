@@ -309,7 +309,7 @@ function afficheMap(){
           .delay(function (d, i) {
             return i * 2;
           })
-          .style("opacity", 1)
+          .style("opacity", 0.3)
           .on("end", function() {
 
             const district = document.createElement('span');
@@ -386,11 +386,9 @@ function updateChart() {
 
  
     // Ajouter un écouteur d'événements pour la touche "espace"
-document.addEventListener("keydown", function(event) {
-  if (event.code === "Enter") {
-    separateGroups(circles, group1Data, group2Data);
-  }
-});  
+setTimeout(function() {
+  separateGroups(circles, group1Data, group2Data);
+}, 5000);  
 }
 
 async function separateGroups(circles, group1Data, group2Data) {
